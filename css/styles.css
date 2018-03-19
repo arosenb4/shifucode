@@ -7,6 +7,10 @@ html, body{
   background: #efefef;
 }
 
+.main{
+    margin-top:20%;
+}
+
 .foo{
   border-left: 10px solid red;
 }
