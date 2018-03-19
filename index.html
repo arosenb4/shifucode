@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<title>Shifu Meditations for Programming</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="highlight/styles/obsidian.css">
+<script src="highlight/highlight.pack.js" charset="utf-8"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+<body>
+<div class="main">
+  <h1>Programming <span class="muted">Shifu</span> Meditations </h1>
+
+  <section id="preface">
+    <h2>Preface</h2>
+    <p> Those claiming to be Shifu are possessed of considerably higher standards than typical programmers. The training is a great deal more intensive and much more exclusive. It is geared towards weeding out the weak. Overt displays of scripting ability,
+      such as advanced BASH commands, Makefiles, and shell environments are focused on. The associated terseness is not so much a training method as a test of the initiate's dedication. </p>
+    <h2> Conventions</h2>
+    <blockquote class="foo" cite="http://">
+      Young foo asked shifu ...
+    </blockquote>
+    <pre><code class="python foo">
+      for x in range(10):
+        print(x)
+    </code> foo-example.py </pre>
+    <blockquote class="shifu" cite="http://">
+      Shifu replies to young foo ...
+    </blockquote>
+    <pre><code class="python shifu">
+      print([val for val in range(10)])
+    </code> shifu-example.py </pre>
+    <blockquote class="master-foo" cite="http://">
+      Master foo enlightens young foo
+    </blockquote>
+    <pre><code class="python master-foo">
+      print(range(10))
+    </code> master-foo-example.py </pre>
+  </section>
+
+  <section id="introduction">
+    <h2>Introduction</h2>
+    <blockquote cite="http://" class="scroll">
+      Something mysterious is formed, born in the silent void. waiting alone and unmoving, it is at once still and yet in constant motion. It is the source of all programs. I do not know its name, so I will call it the Tao of Programming.
+    </blockquote>
+    <pre> The Tao of Programming - <em>The Silent Void 1.1</em> </pre>
+    <p>Shifu recognize mastery of their craft lie within techniques as opposed to tools. The wise programmer is told about Tao and follows it. The average programmer is told about Tao and searches for it. The foolish programmer is told about Tao and laughs at
+      it. If it were not for laughter, there would be no Tao. </p>
+    <blockquote cite="http://" class="scroll">
+      The Tao gave birth to machine language. Machine language gave birth to the assembler. The assembler gave birth to the compiler. Now there are ten thousand languages. Each language has its purpose, however humble. Each language expresses the Yin
+        and Yang of software. Each language has its place within the Tao.
+        <br> <br>
+        But do not program in COBOL if you can avoid it.
+    </blockquote>
+    <pre> The Tao of Programming - <em>The Silent Void 1.2</em> </pre>
+    <p>In parallel to a writing system, to transmit their canonical teachings, knowledge is often transmitted by presenting examples of the Tao; either by illustration or analogies. </p>
+    <blockquote cite="http://" class="scroll">
+      The programmers of old were mysterious and profound. We cannot fathom their thoughts, ...
+      Who can tell the secrets of their hearts and minds?
+      <br> <br>
+      The answer exists only in Tao.
+    </blockquote>
+    <pre> The Tao of Programming - <em>The Ancient Masters 2.1</em> </pre>
+  </section>
+  
+  <section id="shelf">
+    <h2>Find your inner <span class="muted">SH</span>elf</h2>
+    <blockquote class="foo" cite="http://">
+      Young foo asked: How can I find myself within the Tao?
+    </blockquote>
+    <blockquote class="shifu" cite="http://">
+      Shifu replied: There are many paths to the Tao: light and dark; Yin and Yang; BASH and PowerShell.
+    </blockquote>
+    <blockquote class="master-foo" cite="http://">
+      Master foo launched a new terminal and typed
+    </blockquote>
+  <pre><code class="bash master-foo">
+  > whoami
+  master-foo
+  </code> whoami example </pre>
+    <p>Perplexed by master foo's response, young foo inquired</p>
+    <blockquote class="foo" cite="http://">
+      Surely I cannot find myself within the Tao in a single command field.
+    </blockquote>
+    <blockquote class="shifu" cite="http://">
+      Young foo, have you not read <a href="http://www.catb.org/esr/writings/unix-koans/ten-thousand.html">Master foo and the 10,000 lines</a>? There is more Unix-nature in one line of shell script than there is in ten thousand lines of C.
+    </blockquote>
+    <p> After overhearing shifu, master foo asked</p>
+    <blockquote class="master-foo" cite="http://">
+      Would two fields be more enlightening?
+    </blockquote>
+<pre><code class="bash master-foo">
+  > echo $USER
+  master-foo
+
+</code> echo example </pre>
+<pre><code class="bash master-foo">
+  > man man
+  ...
+</code> manpage example </pre>
+
+<pre><code class="bash scroll">
+man(1)                                        man(1)
+
+NAME
+       man  -  format and display the on-line manual
+       pages
+
+SYNOPSIS
+       man [-acdfFhkKtwW] [--path] [-m  system]  [-p
+       string]  [-C  config_file]  [-M pathlist] [-P
+       pager] [-B browser] [-H htmlpager]  [-S  sec-
+       tion_list] [section] name ...
+
+
+DESCRIPTION
+       man  formats  and displays the on-line manual
+       pages.  If  you  specify  section,  man  only
+       ...
+
+</code> manpage for manpages </pre>
+    <p>Upon running every combination of the commands, young foo was enlightened.</p>
+    <p></p>
+  </section>
+
+  <section id="stdio">
+    <h2> Exit Status </h2>
+    <p>After studying studying the man pages, young foo was perplexed. </p>
+    <blockquote class="foo" cite="http://">
+      The man pages for echo describe an <em>Exit Status</em> ...
+    </blockquote>
+    <p>Before young foo could finish shifu typed in the terminal</p>
+<pre><code class="bash shifu">
+  > man echo | head -30 | tail -2
+  EXIT STATUS
+     The echo utility exits 0 on success, and >0 if
+     an error occurs.
+
+</code> EXIT STATUS for echo (from manpage) </pre>
+    <blockquote class="shifu" cite="http://">
+      ... continue ...
+    </blockquote>
+    <blockquote class="foo" cite="http://">
+      Shifu, how can I know the <em>EXIT STATUS</em>? Upon success, the program executes; upon failure it does not.
+    </blockquote>
+    <blockquote class="shifu" cite="http://">
+      Young foo, an <em>EXIT STATUS</em> is not associated with any single utility. It is a Yin paradigm within the Tao; each value assigned a purpose. Should one abandon context if in error?
+    </blockquote>
+    <p>Without speaking, master foo opened a terminal and typed</p>
+<pre><code class="bash master-foo">
+  > echo $USER
+  master-foo
+  > echo $?
+  0
+  > error
+  sh: command not found: error
+  > echo $?
+  127
+  > echo $?
+  0
+  > echo '$USER'
+  $USER
+
+</code> Determining an EXIT STATUS </pre>
+    <blockquote class="master-foo" cite="http://">
+      Young foo, return home, meditate on this example, and study <em>string interpolation</em>. Then you will be enlighted in the Tao.
+    </blockquote>
+    <p>After saying these things, master-foo returned <em>$HOME</em> as if he had never left.</p>
+<pre><code class="bash master-foo">
+> pwd
+/Users/master-foo
+> echo ~
+/Users/master-foo
+> echo $HOME
+/Users/master-foo
+> file $HOME
+/Users/master-foo: directory
+cd ~
+
+</code> $HOME directory example</pre>
+  </section>
+
+  <!--<section id="directories">-->
+    <!--<h2>Directories</h2>-->
+    <!--After some time reading the man pages and meditating on the teachings of the masters, young foo realized he had the power to change directories, but did not know from whence he came, nor whereto he was seeking.-->
+  <!--</section>-->
+</div>
+</body>
+</html>
