@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Shifu Code</title>
+<title>The Shifu Code</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/styles.css">
@@ -11,35 +11,38 @@
 </script>
 <body>
 <div class="main">
-  <h1>Software <span class="muted">Shifu</span> Meditations </h1>
+  <h1>The <span class="muted">Shifu</span> Code </h1>
+  <hr />
+  <section id="preface" class="card">
+        <h2>Preface</h2>
+        <p> Those claiming to be Shifu are possessed of considerably higher standards than typical programmers. The training is a great deal more intensive and much more exclusive. It is geared towards weeding out the weak. Overt displays of scripting ability,
+          such as advanced BASH commands, Makefiles, and shell environments are focused on. The associated terseness is not so much a training method as a test of the initiate's dedication. </p>
+    </section>
+  <section id="convections" class="card">
+        <h2> Conventions</h2>
+        <blockquote class="foo" cite="http://">
+          Young foo asked shifu ...
+        </blockquote>
+        <pre><code class="python foo">
+          for x in range(10):
+            print(x)
+        </code> foo-example.py </pre>
+        <blockquote class="shifu" cite="http://">
+          Shifu replies to young foo ...
+        </blockquote>
+        <pre><code class="python shifu">
+          print([val for val in range(10)])
+        </code> shifu-example.py </pre>
+        <blockquote class="master-foo" cite="http://">
+          Master foo enlightens young foo
+        </blockquote>
+        <pre><code class="python master-foo">
+          print(range(10))
+        </code> master-foo-example.py </pre>
+      </section>
 
-  <section id="preface">
-    <h2>Preface</h2>
-    <p> Those claiming to be Shifu are possessed of considerably higher standards than typical programmers. The training is a great deal more intensive and much more exclusive. It is geared towards weeding out the weak. Overt displays of scripting ability,
-      such as advanced BASH commands, Makefiles, and shell environments are focused on. The associated terseness is not so much a training method as a test of the initiate's dedication. </p>
-    <h2> Conventions</h2>
-    <blockquote class="foo" cite="http://">
-      Young foo asked shifu ...
-    </blockquote>
-    <pre><code class="python foo">
-      for x in range(10):
-        print(x)
-    </code> foo-example.py </pre>
-    <blockquote class="shifu" cite="http://">
-      Shifu replies to young foo ...
-    </blockquote>
-    <pre><code class="python shifu">
-      print([val for val in range(10)])
-    </code> shifu-example.py </pre>
-    <blockquote class="master-foo" cite="http://">
-      Master foo enlightens young foo
-    </blockquote>
-    <pre><code class="python master-foo">
-      print(range(10))
-    </code> master-foo-example.py </pre>
-  </section>
 
-  <section id="introduction">
+  <section id="introduction" class="card">
     <h2>Introduction</h2>
     <blockquote cite="http://" class="scroll">
       Something mysterious is formed, born in the silent void. waiting alone and unmoving, it is at once still and yet in constant motion. It is the source of all programs. I do not know its name, so I will call it the Tao of Programming.
@@ -64,7 +67,7 @@
     <pre> The Tao of Programming - <em>The Ancient Masters 2.1</em> </pre>
   </section>
   
-  <section id="shelf">
+  <section id="shelf" class="card">
     <h2>Find your inner <span class="muted">SH</span>elf</h2>
     <blockquote class="foo" cite="http://">
       Young foo asked: How can I find myself within the Tao?
@@ -124,7 +127,7 @@ DESCRIPTION
     <p></p>
   </section>
 
-  <section id="stdio">
+  <section id="stdio" class="card">
     <h2> Exit Status </h2>
     <p>After studying studying the man pages, young foo was perplexed. </p>
     <blockquote class="foo" cite="http://">

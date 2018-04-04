@@ -1,18 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Space+Mono');
+
+@import url('palette.css');
 
 html, body{
-  height: 100%;
-  max-width: 680px;
-  margin: 0 auto;
-  background: #efefef;
+  height: 100vh;
+  background: #CFD8DC;
+  color: #212121;
+  font-family: 'Space Mono', monospace;
+
 }
 
+h1, h2 {
+  font-family: 'Libre Barcode 128 Text', cursive;
+}
+h1{
+    font-size: 72px;
+}
+h2{
+    font-size: 64px;
+}
+
+p{
+    font-size: 18px;
+}
+
+
 .main{
-    margin-top:20%;
+    max-width: 680px;
+    margin: 0 auto;
 }
 
 .foo{
-  border-left: 10px solid red;
+  border-left: 10px solid #cf0000;
 }
 
 .shifu{
@@ -29,43 +48,62 @@ html, body{
 
 code{
   font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
 }
 
 pre{
+  font-size: 16px;
   margin-bottom: 8%;
 }
 
 blockquote {
-  background: #f9f9f9;
-  margin: 1.5em 10px;
+  margin:  0;
   padding: 0.5em 10px;
-  quotes: "\201C""\201D";
-  margin-bottom: 0px;
+  font-weight: bold;
+
+  color: #757575;
+  background: #FFFFFF;
+
+  /*quotes: "\201C""\201D";*/
+  box-shadow: 3px 3px #999;
 }
 
-blockquote:before {
-  color:  #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-
-blockquote p {
-}
-
-body{
-  font-family: 'Open Sans', sans-serif;
-  padding: 0 5%;
-}
-
-h1, h2, h3 {
-  text-align: center;
-  margin-top:8%;
-}
+/*blockquote:before {*/
+  /*color:  #ccc;*/
+  /*content: open-quote;*/
+  /*font-size: 4em;*/
+  /*line-height: 0.1em;*/
+  /*margin-right: 0.25em;*/
+  /*vertical-align: -0.4em;*/
+/*}*/
 
 .muted {
-  color: #089;
-  /* text-decoration: underline; */
+  color: #03A9F4
 }
+
+.dark-primary-color    { background: #455A64; }
+.default-primary-color { background: #607D8B; }
+.light-primary-color   { background: #CFD8DC; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #448AFF; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+
+.card{
+    background: #96B4C3;
+    padding: 1px 40px;
+    margin: 58px 0;
+    box-shadow: 3px 3px #999;
+}
+
+.card h2 {
+  color: #0097A7;
+  background: #082C3C;
+  margin-left:  -40px;
+  margin-right:  -40px;
+  padding: 48px;
+  opacity: 0.8;
+}
+
+
