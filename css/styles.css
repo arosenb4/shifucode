@@ -43,12 +43,13 @@ p{
 }
 
 .scroll{
-  border-left: 10px solid #333;
+  border-left: 10px solid #212121;
 }
 
 code{
   font-family: 'Roboto Mono', monospace;
   font-size: 18px;
+  box-shadow: 3px 3px #999
 }
 
 pre{
@@ -106,4 +107,7 @@ blockquote {
   opacity: 0.8;
 }
 
+.card:first-of-type p {
+    padding-bottom: 40px;
+}
 
