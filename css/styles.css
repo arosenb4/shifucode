@@ -1,6 +1,5 @@
+/*pre-loaded*/
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Space+Mono');
-
-@import url('palette.css');
 
 html, body{
   height: 100vh;
